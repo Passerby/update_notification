@@ -45,6 +45,8 @@ group :development, :test do
   gem 'capistrano-rvm'
   gem 'capistrano-sidekiq', github: 'seuros/capistrano-sidekiq'
   gem 'capistrano3-unicorn'
+  gem 'spring'
+  gem 'letter_opener'
 end
 
 group :development, :staging, :test do
@@ -94,3 +96,5 @@ gem 'redis-rails'
 
 gem 'whenever', require: false
 gem 'nokogiri', '>= 1.6.8'
+
+gem 'yaml_db', git: 'git://github.com/ballin22s/yaml_db.git' # 导出数据
